@@ -2,13 +2,13 @@
             "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 	<head>
-		<title>TheWorld.Seed.List Demo</title>
+		<title>TW.Seed.List Demo</title>
         <style type='text/css'>
             body {font-family: verdana}
         </style>
 	</head>
 	<body>
-	    <h1>TheWorld.Seed.List Demo</h1>
+	    <h1>TW.Seed.List Demo</h1>
 		<ul id='seeds'></ul>
 		<a href='javascript://' id='create'>Create Seed</a>
 		<script type='text/javascript' 
@@ -20,7 +20,7 @@
 				$('#seeds').the_world_seed_list();
 				
 				$('#create').click(function(){
-					new TheWorld.Models.Seed({
+					new TW.Models.Seed({
 						name: "Grilled Cheese",
 						description: "Bread and Cheese"
 					}).save();

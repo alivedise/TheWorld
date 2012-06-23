@@ -1,8 +1,8 @@
-//steal/js TheWorld/scripts/compress.js
+//steal/js tw/scripts/compress.js
 
 load("steal/rhino/rhino.js");
 steal('steal/clean',function(){
-	steal.clean('TheWorld/the_world.html',{
+	steal.clean('tw/the_world.html',{
 		indent_size: 1, 
 		indent_char: '\t', 
 		jslint : false,

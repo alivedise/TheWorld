@@ -1,10 +1,10 @@
-steal( 'the_world/modules/base' )
+steal( 'the_world/modules/base','the_world/modules/environment' )
 	.then( './views/init.ejs', function($){
 
 /**
- * @class TheWorld.Modules.Core
+ * @class TW.Modules.Core
  */
-TheWorld.Modules.Base('TheWorld.Modules.Core',
+TW.Modules.Base('TW.Modules.Core',
 /** @Static */
 {
 	defaults : {}
@@ -12,9 +12,7 @@ TheWorld.Modules.Base('TheWorld.Modules.Core',
 /** @Prototype */
 {
 	init : function(){
-		this.element.html("//the_world/modules/core/views/init.ejs",{
-			message: "Hello World"
-		});
+    TW.Modules.Environment.instance();
 	}
 })
 

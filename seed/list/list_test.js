@@ -1,6 +1,6 @@
 steal('funcunit',function(){
 
-module("TheWorld.Seed.List", { 
+module("TW.Seed.List", { 
 	setup: function(){
 		S.open("//the_world/seed/list/list.html");
 	}

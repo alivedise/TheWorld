@@ -2,13 +2,13 @@
             "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 	<head>
-		<title>TheWorld.Seed.Create</title>
+		<title>TW.Seed.Create</title>
         <style type='text/css'>
             body {font-family: verdana}
         </style>
 	</head>
 	<body>
-	    <h1>TheWorld.Seed.Create Demo</h1>
+	    <h1>TW.Seed.Create Demo</h1>
 		<form id='create' action=''></form>
 		<div id='seeds'></div>
 		<script type='text/javascript' 
@@ -18,7 +18,7 @@
 			steal('the_world/seed/create','the_world/fixtures',function(){
 				
 				$('#create').the_world_seed_create();
-				TheWorld.Models.Seed.bind('created', function(ev, seed){
+				TW.Models.Seed.bind('created', function(ev, seed){
 					$('<div>').html("<h3>"+seed.name+"</h3><p>"+seed.description+"</p>")
 					        .appendTo( $('#seeds') )
 				})
