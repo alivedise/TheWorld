@@ -6,12 +6,12 @@ steal( 'jquery/controller',
 	.then('./views/init.ejs', function($){
 
 /**
- * @class TheWorld.Seed.Create
+ * @class TW.Seed.Create
  * @parent index
  * @inherits jQuery.Controller
  * Creates seeds
  */
-$.Controller('TheWorld.Seed.Create',
+$.Controller('TW.Seed.Create',
 /** @Prototype */
 {
 	init : function(){
@@ -20,7 +20,7 @@ $.Controller('TheWorld.Seed.Create',
 	submit : function(el, ev){
 		ev.preventDefault();
 		this.element.find('[type=submit]').val('Creating...')
-		new TheWorld.Models.Seed(el.formParams()).save(this.callback('saved'));
+		new TW.Models.Seed(el.formParams()).save(this.callback('saved'));
 	},
 	saved : function(){
 		this.element.find('[type=submit]').val('Create');

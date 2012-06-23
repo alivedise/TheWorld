@@ -2,9 +2,9 @@ steal( 'jquery/controller','jquery/view/ejs','jquery/controller/subscribe' )
 	.then( './views/init.ejs', function($){
 
 /**
- * @class TheWorld.Modules.Base
+ * @class TW.Modules.Base
  */
-$.Controller('TheWorld.Modules.Base',
+$.Controller('TW.Modules.Base',
 /** @Static */
 {
   defaults : {},

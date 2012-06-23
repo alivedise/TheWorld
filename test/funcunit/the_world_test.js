@@ -1,7 +1,7 @@
 steal("funcunit", function(){
 	module("the_world test", { 
 		setup: function(){
-			S.open("//TheWorld/the_world.html");
+			S.open("//tw/the_world.html");
 		}
 	});
 	

@@ -1,6 +1,6 @@
 steal('funcunit',function(){
 
-module("TheWorld.Seed.Create", { 
+module("TW.Seed.Create", { 
 	setup: function(){
 		S.open("//the_world/seed/create/create.html");
 	}
