@@ -1,5 +1,5 @@
-steal( 'the_world/modules/base','the_world/modules/environment' )
-	.then( './views/init.ejs', function($){
+steal( 'tw/modules/base','tw/modules/environment','tw/modules/auth','tw/modules/layout','tw/modules/message','tw/modules/notification' )
+	.then( function($){
 
 /**
  * @class TW.Modules.Core
