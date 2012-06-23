@@ -5,5 +5,5 @@ steal(
 	'the_world/seed/create',
 	'the_world/seed/list',
 	function(){					// configure your application
-    TheWorld.Modules.Core.instance();
+    TW.Modules.Core.instance();
 })

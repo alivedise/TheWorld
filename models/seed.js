@@ -1,12 +1,12 @@
 steal('jquery/model', function(){
 
 /**
- * @class TheWorld.Models.Seed
+ * @class TW.Models.Seed
  * @parent index
  * @inherits jQuery.Model
  * Wraps backend seed services.  
  */
-$.Model('TheWorld.Models.Seed',
+$.Model('TW.Models.Seed',
 /* @Static */
 {
 	findAll: "/seeds.json",
